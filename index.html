@@ -8,30 +8,64 @@
     <style>
         body {
             font-family: Helvetica, Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            background-image: url('background.png');
+            background-position: center 30%;
+            background-repeat: no-repeat;
+            background-size: auto 60%;
             height: 100vh;
             margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; 
+            align-items: center;
             position: relative;
         }
-        h1, h2 {
-            text-align: center;
+
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 600px;
+            height: auto;
         }
+
+        .texto-superior-derecha {
+            position: absolute;
+            top: 22%;
+            right: 30%;
+            color: #01394a; 
+            font-size: 29px; 
+            font-weight: bold;
+        }
+        .texto-inferior-izquierda {
+            position: absolute;
+            top: 48%;
+            left: 19%;
+            color: #01394a;
+            font-size: 29px; 
+            font-weight: bold;
+        }
+
         .bottom-right {
             position: absolute;
             bottom: 10px;
             right: 10px;
-            font-size: 8px;
+            font-size: 12px;
             color: grey;
         }
+
     </style>
 </head>
 <body>
-    <h1><img src="logo.png" alt="circonitas" style="width:100%; max-width:600px;"></h1>
-    <h2>august 23</h2>
-    <h3>announcement coming soon</h3>
+    <img src="logo.png" alt="Circonitas" class="logo">
+    <div class="texto-superior-derecha">
+        <p>august 23th</p>
+    </div>
+    <div class="texto-inferior-izquierda">
+        <p>save the date!</p>
+    </div>
     <div class="bottom-right">developed by <strong>helveticka</strong></div>
 </body>
 </html>
+
